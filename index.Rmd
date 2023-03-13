@@ -1,0 +1,52 @@
+---
+title: "Assigment 1"
+author: "Shengsheng He"
+date: "2023/3/09"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, error = FALSE, warning = FALSE)
+```
+
+# Top 3 Dogs with smiling picture
+
+* Two Golden retriever (younger and older).
+* one Shiba Inu.
+
+```{r, eval=FALSE}
+library(magick)
+dog1 <- image_read('1.jfif') # name the image
+dog2 <- image_read('2.jfif')
+dog3 <- image_read('3.jfif')
+meme <- image_append(c(dog1,dog2,dog3))
+image_write(meme, "my_meme.png") # save
+
+
+
+
+```
+
+The Golden retriever are my favorite type, cute and smart. While I was smiling to my dog, she will respond to me a smile as well. The relationship between human and dog are the pure, I wanted to pass the happiness between the pet and human to everyone by this meme.  
+
+
+```{r}
+library(magick)
+dog1 <- image_read('1.jfif') # name the image
+dog2 <- image_read('2.jfif')
+dog3 <- image_read('3.jfif')
+animation <- c(dog1,dog2,dog3)
+animation %>%
+   image_animate(fps = 1) # animate the image
+image_write(animation, "my_animation.gif")
+
+
+```
+I animate the meme images into fps = 1, which the image will all the smiling face I love and I believe it will make everyone happy!
+
+
+```{css}
+p {font-wight: bold; }
+
+```
