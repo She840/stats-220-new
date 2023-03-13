@@ -6,4 +6,4 @@ The cute smelling dogs are feels warm to me, I want to pick three image from int
 * one Shiba Inu.
 
  ## ```Check out the "smiling"  ```
- This is the *meme* that I made:[Repo](https://raw.githubusercontent.com/She840/stats-220-new/main/index.html)
+ This is the *meme* that I made:[Repo](https://github.com/She840/stats-220-new/blob/main/index.html)
